@@ -1,0 +1,68 @@
+This directory contains FISH data on 26 samples from 13 individuals
+with breast cancer [1]. Patients B1 through B13 each have samples
+for ductal carcinoma in situ (DCIS) and invasive ductal carcinoma (IDC).
+In each of 13 subdirectories, there are two data files, one labeled
+with DCIS in the name and the other labeled with IDC in the name.
+
+The original data were filtered as described in [1] to eliminated
+likely cut nuclei. The files are in the input format expected by
+the software FISHtrees [2].
+
+Each patient data file is in tab-delimited columns with two header rows.
+<header row 1> :- <number chromosome probes> <chromosome probe 1> ... \
+                  <number gene probes> <gene probe 1> ...
+<header row 2> :- <number of sample cell patterns> <number of sample cells>
+<pattern row 1> :- <copy number of chromosome probe 1> ... \
+                   <copy number of gene probe 1> ... \
+                   <number of sample cells of this pattern>
+...
+
+There are <number of sample cell patterns> rows of
+<number of sample cells of this pattern>, therefore all
+<number of sample cells of this pattern> sum up to
+<number of sample cells>.
+
+The upper part of a patient data file looks as follows:
+
+3       PLOIDY  CEP10   CEP4    8       COX2   DBC2    MYC     CCND1   CDH1    p53     HER2   ZNF217
+87      175
+2       2       2       1       1       1       2       1       2       2       3       1
+2       2       2       1       2       1       2       2       2       2       2       1
+2       2       2       1       2       2       2       1       1       2       2       1
+2       2       2       1       2       2       2       1       2       2       1       1
+2       2       2       1       2       2       2       2       2       2       1       1
+2       2       2       1       2       2       2       2       2       2       2       1
+2       2       2       1       2       2       2       2       2       2       3       1
+2       2       2       2       0       2       2       2       2       1       1       1
+2       2       2       2       1       2       2       1       1       1       1       1
+2       2       2       2       1       2       2       1       1       2       2       1
+
+followed possibly by more rows of cell types.
+In this data set, there are actually two chromosome probes: CEP10 and CEP4.
+The column marked PLOIDY reflects one attempt to infer the
+ploidy of the cell, as described in [1].
+
+
+Please cite references [1] and [2] if you use these data in a published
+study.
+
+Send any comments, questions or complaints about the data files to:
+  Alejandro Schaffer <schaffer@helix.nih.gov>
+and
+  Russell Schwartz <russells@andrew.cmu.edu>.
+
+References:
+
+[1] Heselmeyer-Haddad K, Berroa Garcia LY, Bradley A, Ortiz-Melendez C,
+    Lee W-J, Christensen R, Prindiville SA, Calzone KA, Soballe PW,
+    Hu Y, Chowdhury SA, Schwartz R, Schaffer AA, Ried T:
+    Single-cell genetic analysis of ductal carcinoma in situ and invasive
+    breast cancer reveals enormous tumor heterogeneity, yet conserved genomic
+    imbalances and gain of  MYC during progression. American Journal of Pathology
+    181:1807-1822, 2012.
+
+[2] Chowdhury SA, Shackney SE, Heselmeyer-Haddad K, Ried T, 
+    Schaffer AA, Schwartz R: Phylogenetic analysis
+    of multiprobe fluorescence in situ hybridization data from
+    tumor cell populations. Bioinformatics 29:i189--i198, 2013.
+
