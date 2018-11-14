@@ -120,4 +120,7 @@ for i in range(num_vertices):
 
 # Print out the Manhattan Distance array in a tabular format.
 manhattan_df = pd.DataFrame(manhattan_distance_matrix)
+# Print out the matrix in a fancy grid format for visualization.
 print(tabulate(manhattan_df, headers='keys', tablefmt="fancy_grid"))
+# # Print out in the format of html table for Github README.md file.
+# print(tabulate(manhattan_df, headers='keys', tablefmt="html"))
