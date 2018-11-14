@@ -9,6 +9,11 @@ This folder contains two files:
   FISH dataset provided in the folder <code>breast_cancer_data_filtered</code>. </li>
 </ol>
 
+<h2>Program Execution</h2>
+With the <code>test.txt</code> in the same directory as the Python script file <code>DataParser.py</code>, the program can be
+executed as follows:
+<code align="center">python Dataparser.py</code>
+
 <h2>Program Output</h2>
 The Manhattan Distance Matrix (for 10 cell count patterns):
 <table>
