@@ -12,6 +12,7 @@ This folder contains two files:
 <h2>Program Execution</h2>
 With the <code>test.txt</code> in the same directory as the Python script file <code>DataParser.py</code>, the program can be
 executed as follows:
+
 <code align="center">python Dataparser.py</code>
 
 <h2>Program Output</h2>
